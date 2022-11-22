@@ -3,14 +3,10 @@ from spacy.lang.en.stop_words import STOP_WORDS
 from string import punctuation
 from heapq import nlargest
 from streamlit import cache
+import en_core_web_sm
 def summarize(text, per):
     @cache(allow_output_mutation=True)
-    def load_model(model_name):
-        nlp = spacy.load(model_name)
-        return (nlp)
-        
-    nlp = load_model('en_core_web_sm')
-    
+    nlp = en_core_web_sm.load()
     doc= nlp(text)
     tokens=[token.text for token in doc]
     word_frequencies={}
