@@ -78,11 +78,9 @@ with st.container():
      if submitted:
        
         import main
-        main.generate(linkFromUser,percent)
         import hydralit_components as hc
         import time
         with hc.HyLoader('',hc.Loaders.pulse_bars,):
-           time.sleep(5)
+           main.generate(linkFromUser,percent)
         f = open(r"output.txt",encoding="utf8")
         st.write(f.read())
-     
