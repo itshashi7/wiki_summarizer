@@ -49,7 +49,7 @@ streamlit run website.py
 ## What I'd improve now
 
 - Replace frequency scoring with an LLM or a transformer model for more natural summaries.
-- Show the summary directly on the page instead of writing it to `output.txt`.
+- Return the summary in memory instead of passing it through a shared `output.txt` file, which would break if two people used the app at the same time.
 - Cache fetched articles and add error handling for invalid links.
 
 ## Author
