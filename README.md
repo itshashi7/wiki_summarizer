@@ -42,8 +42,9 @@ streamlit run website.py
 
 ## Screenshot
 
-<!-- Add a screenshot: save it as docs/screenshot.png and uncomment the line below -->
-<!-- ![Wikipedia Summarizer](docs/screenshot.png) -->
+![Wikipedia Summarizer: link input, summarization slider and the how-to guide](docs/screenshot.png)
+
+![Summary output: the article shortened section by section, headings kept](docs/summary.png)
 
 ## What I'd improve now
 
